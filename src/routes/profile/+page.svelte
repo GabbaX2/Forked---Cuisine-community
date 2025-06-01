@@ -23,7 +23,7 @@
     let loading = true;
     let error = "";
 
-    const API_BASE = "http://localhost:3000";
+    const API_BASE = "https://forked-backend-x4tb.onrender.com";
 
     onMount(async () => {
         // Verifica se l'utente è loggato
