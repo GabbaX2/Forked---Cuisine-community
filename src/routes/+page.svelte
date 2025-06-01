@@ -82,7 +82,7 @@
 
             // Poi carichiamo le ricette
             const recipesResponse = await fetch(
-                "http://localhost:3000/forked/recipes",
+                "https://forked-backend-x4tb.onrender.com/forked/recipes",
             );
             if (!recipesResponse.ok) {
                 throw new Error(
