@@ -73,7 +73,7 @@
     let shoppingList = $state<ShoppingListResponse | null>(null);
     let showShoppingList = $state(false);
 
-    const API_BASE_URL = "http://localhost:3000";
+    const API_BASE_URL = "https://forked-backend-x4tb.onrender.com";
 
     // Ottieni il nome della ricetta dai parametri URL
     const recipeName = $derived(decodeURIComponent($page.params.name));
@@ -521,32 +521,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Shopping List Button - Mostra solo se loggato -->
-            {#if $isLoggedIn && user}
-                <button
-                    onclick={openShoppingModal}
-                    type="button"
-                    class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-center mb-10"
-                >
-                    <svg
-                        class="w-4 h-4 me-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 18 20"
-                    >
-                        <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
-                        />
-                    </svg>
-                    Lista Spesa
-                </button>
-            {/if}
 
             <!-- Recipe Details -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
