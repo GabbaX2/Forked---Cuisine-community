@@ -28,10 +28,8 @@
             }
 
             console.log("🔍 Tentativo di recupero ricette utente...");
-
-            // PROVA 1: Prova prima /myrecipes (originale)
             let response;
-            let endpoint = "http://localhost:3000/forked/myrecipes";
+            let endpoint = "https://forked-backend-x4tb.onrender.com/forked/myrecipes";
 
             try {
                 console.log(`📡 Chiamando: ${endpoint}`);
