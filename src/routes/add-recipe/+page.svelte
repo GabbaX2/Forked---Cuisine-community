@@ -109,7 +109,7 @@
 
             debugInfo += `✓ Payload preparato: ${JSON.stringify(payload, null, 2)}\n`;
 
-            const url = "http://localhost:3000/forked/recipes";
+            const url = "https://forked-backend-x4tb.onrender.com/forked/recipes";
             debugInfo += `📡 Invio richiesta a: ${url}\n`;
 
             console.log("Sending request to:", url);
