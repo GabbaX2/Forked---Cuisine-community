@@ -75,7 +75,7 @@
             isLoading = true;
 
             // Prima verifichiamo che l'API sia online
-            const healthCheck = await fetch("http://localhost:3000/");
+            const healthCheck = await fetch("https://forked-backend-x4tb.onrender.com/");
             if (!healthCheck.ok) {
                 throw new Error("Server non disponibile");
             }
