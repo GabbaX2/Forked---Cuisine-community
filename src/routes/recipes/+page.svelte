@@ -28,7 +28,7 @@
     let loading = true;
     let error = "";
 
-    const API_BASE_URL = "http://localhost:3000";
+    const API_BASE_URL = "https://forked-backend-x4tb.onrender.com";
 
     async function fetchRecipes() {
         try {
